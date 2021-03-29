@@ -11,6 +11,11 @@
 		1B025E1A26125A5E00FA5706 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B025E1926125A5E00FA5706 /* ContentView.swift */; };
 		1B025E1C26125A6100FA5706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B025E1B26125A6100FA5706 /* Assets.xcassets */; };
 		1B025E1F26125A6100FA5706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B025E1E26125A6100FA5706 /* Preview Assets.xcassets */; };
+		899B09122612671D00998E33 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B09112612671D00998E33 /* Event.swift */; };
+		899B0917261267A200998E33 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0916261267A200998E33 /* Calendar.swift */; };
+		899B091C2612680600998E33 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B091B2612680600998E33 /* Content.swift */; };
+		899B09212612689000998E33 /* Connections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B09202612689000998E33 /* Connections.swift */; };
+		899B0926261268BE00998E33 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0925261268BE00998E33 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,11 @@
 		1B025E2026125A6100FA5706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B025E2526125A6100FA5706 /* PixelShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B025E3026125A6100FA5706 /* PixelShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		899B09112612671D00998E33 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		899B0916261267A200998E33 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		899B091B2612680600998E33 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		899B09202612689000998E33 /* Connections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connections.swift; sourceTree = "<group>"; };
+		899B0925261268BE00998E33 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				1B025E1926125A5E00FA5706 /* ContentView.swift */,
+				899B09112612671D00998E33 /* Event.swift */,
+				899B0916261267A200998E33 /* Calendar.swift */,
+				899B091B2612680600998E33 /* Content.swift */,
+				899B09202612689000998E33 /* Connections.swift */,
+				899B0925261268BE00998E33 /* Favorites.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899B09122612671D00998E33 /* Event.swift in Sources */,
 				1B025E1A26125A5E00FA5706 /* ContentView.swift in Sources */,
+				899B09212612689000998E33 /* Connections.swift in Sources */,
 				1B025E1826125A5E00FA5706 /* PixelShowApp.swift in Sources */,
+				899B0926261268BE00998E33 /* Favorites.swift in Sources */,
+				899B0917261267A200998E33 /* Calendar.swift in Sources */,
+				899B091C2612680600998E33 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
