@@ -1,5 +1,5 @@
 //
-//  Connections.swift
+//  Event.swift
 //  PixelShow
 //
 //  Created by Thaís Fernandes on 29/03/21.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Connections: View {
+struct EventView: View {
     var body: some View {
-        Text("Connections")
+        Text("Evento")
     }
 }
 
-struct Connections_Previews: PreviewProvider {
+struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        Connections()
+        EventView()
     }
 }

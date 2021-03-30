@@ -18,31 +18,31 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Event()
+            EventView()
                 .tabItem {
                     Image(systemName: "puzzlepiece")
                     Text("Evento")
                 }
             
-            Calendar()
+            CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Agenda")
                 }
             
-            Content()
+            ContentListView()
                 .tabItem {
                     Image(systemName: "square.3.stack.3d")
                     Text("Conteúdo")
                 }
             
-            Connections()
+            ConnectionsView()
                 .tabItem {
                     Image(systemName: "person.2")
                     Text("Conexões")
                 }
             
-            Favorites()
+            FavoritesView()
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Favoritos")

@@ -1,5 +1,5 @@
 //
-//  Content.swift
+//  Calendar.swift
 //  PixelShow
 //
 //  Created by Thaís Fernandes on 29/03/21.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Content: View {
+struct CalendarView: View {
     var body: some View {
-        Text("Conteúdo")
+        Text("Calendar")
     }
 }
 
-struct Content_Previews: PreviewProvider {
+struct Calendar_Previews: PreviewProvider {
     static var previews: some View {
-        Content()
+        CalendarView()
     }
 }
