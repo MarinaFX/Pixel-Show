@@ -23,6 +23,8 @@
 		C0FE7FC226137FB0000BC492 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC126137FB0000BC492 /* Content.swift */; };
 		C0FE7FC72613801A000BC492 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC62613801A000BC492 /* Person.swift */; };
 		C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FEF26139E54000BC492 /* EventsList.swift */; };
+		C0FE80012613A94D000BC492 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE80002613A94D000BC492 /* EventRow.swift */; };
+		C0FE80062613C2BD000BC492 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE80052613C2BD000BC492 /* Events.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		C0FE7FC126137FB0000BC492 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C0FE7FC62613801A000BC492 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C0FE7FEF26139E54000BC492 /* EventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsList.swift; sourceTree = "<group>"; };
+		C0FE80002613A94D000BC492 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		C0FE80052613C2BD000BC492 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			children = (
 				1B3CB66F2613A50A000ACCCB /* Interests.swift */,
 				1B3CB6772613A519000ACCCB /* TextFields.swift */,
+				C0FE80002613A94D000BC492 /* EventRow.swift */,
+				C0FE80052613C2BD000BC492 /* Events.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -308,10 +314,12 @@
 				C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */,
 				1B3CB6782613A519000ACCCB /* TextFields.swift in Sources */,
 				C0FE7FC72613801A000BC492 /* Person.swift in Sources */,
+				C0FE80012613A94D000BC492 /* EventRow.swift in Sources */,
 				899B0926261268BE00998E33 /* FavoritesView.swift in Sources */,
 				1B3CB6702613A50A000ACCCB /* Interests.swift in Sources */,
 				C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */,
 				899B0917261267A200998E33 /* CalendarView.swift in Sources */,
+				C0FE80062613C2BD000BC492 /* Events.swift in Sources */,
 				C0FE7FC226137FB0000BC492 /* Content.swift in Sources */,
 				C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */,
 				899B091C2612680600998E33 /* ContentListView.swift in Sources */,
