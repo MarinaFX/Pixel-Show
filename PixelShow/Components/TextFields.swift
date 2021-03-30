@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct TextFields: View {
+    @State var userName: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("First name", text: $userName)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            TextField("Last name", text: $userName)
+
+            TextField("Company", text: $userName)
+
+            TextField("Postion", text: $userName)
+
+        }.padding()
     }
 }
 

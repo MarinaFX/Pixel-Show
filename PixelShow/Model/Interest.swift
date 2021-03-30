@@ -8,7 +8,17 @@
 import Foundation
 import SwiftUI
 
-enum Interest: String, CaseIterable {
+var interests: [Interest] = load()
+
+func load() -> [Interest]{
+    for interest in Interest.allCases {
+        interests.append(interest)
+    }
+    
+    return interests
+}
+
+enum Interest: String, CaseIterable {    
     case GCI
     case ilustração = "Ilustração"
     case motion = "Motion"
