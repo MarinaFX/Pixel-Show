@@ -16,6 +16,10 @@
 		899B091C2612680600998E33 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B091B2612680600998E33 /* Content.swift */; };
 		899B09212612689000998E33 /* Connections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B09202612689000998E33 /* Connections.swift */; };
 		899B0926261268BE00998E33 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0925261268BE00998E33 /* Favorites.swift */; };
+		C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FAE26137CE0000BC492 /* Event.swift */; };
+		C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FB926137E59000BC492 /* Interest.swift */; };
+		C0FE7FC226137FB0000BC492 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC126137FB0000BC492 /* Content.swift */; };
+		C0FE7FC72613801A000BC492 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC62613801A000BC492 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		899B091B2612680600998E33 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		899B09202612689000998E33 /* Connections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connections.swift; sourceTree = "<group>"; };
 		899B0925261268BE00998E33 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		C0FE7FAE26137CE0000BC492 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C0FE7FB926137E59000BC492 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		C0FE7FC126137FB0000BC492 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		C0FE7FC62613801A000BC492 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,9 @@
 		1B025E1626125A5E00FA5706 /* PixelShow */ = {
 			isa = PBXGroup;
 			children = (
-				1B025E5126125C4700FA5706 /* Resources */,
+				C0FE7FCB2613823C000BC492 /* Resources */,
 				1B025E5026125C0B00FA5706 /* Components */,
-				1B025E4F26125BD900FA5706 /* Model */,
+				C0FE7FAD26137CBF000BC492 /* Model */,
 				1B025E4E26125BD000FA5706 /* View */,
 				1B025E1726125A5E00FA5706 /* PixelShowApp.swift */,
 				1B025E1B26125A6100FA5706 /* Assets.xcassets */,
@@ -130,13 +138,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1B025E4F26125BD900FA5706 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		1B025E5026125C0B00FA5706 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +145,18 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		1B025E5126125C4700FA5706 /* Resources */ = {
+		C0FE7FAD26137CBF000BC492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE7FAE26137CE0000BC492 /* Event.swift */,
+				C0FE7FB926137E59000BC492 /* Interest.swift */,
+				C0FE7FC126137FB0000BC492 /* Content.swift */,
+				C0FE7FC62613801A000BC492 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0FE7FCB2613823C000BC492 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -284,8 +296,12 @@
 				1B025E1A26125A5E00FA5706 /* ContentView.swift in Sources */,
 				899B09212612689000998E33 /* Connections.swift in Sources */,
 				1B025E1826125A5E00FA5706 /* PixelShowApp.swift in Sources */,
+				C0FE7FC72613801A000BC492 /* Person.swift in Sources */,
 				899B0926261268BE00998E33 /* Favorites.swift in Sources */,
+				C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */,
 				899B0917261267A200998E33 /* Calendar.swift in Sources */,
+				C0FE7FC226137FB0000BC492 /* Content.swift in Sources */,
+				C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */,
 				899B091C2612680600998E33 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
