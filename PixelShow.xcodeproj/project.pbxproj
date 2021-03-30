@@ -20,6 +20,7 @@
 		C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FB926137E59000BC492 /* Interest.swift */; };
 		C0FE7FC226137FB0000BC492 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC126137FB0000BC492 /* Content.swift */; };
 		C0FE7FC72613801A000BC492 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC62613801A000BC492 /* Person.swift */; };
+		C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FEF26139E54000BC492 /* EventsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		C0FE7FB926137E59000BC492 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		C0FE7FC126137FB0000BC492 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C0FE7FC62613801A000BC492 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C0FE7FEF26139E54000BC492 /* EventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		C0FE7FCB2613823C000BC492 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C0FE7FEF26139E54000BC492 /* EventsList.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				1B025E1A26125A5E00FA5706 /* ContentView.swift in Sources */,
 				899B09212612689000998E33 /* Connections.swift in Sources */,
 				1B025E1826125A5E00FA5706 /* PixelShowApp.swift in Sources */,
+				C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */,
 				C0FE7FC72613801A000BC492 /* Person.swift in Sources */,
 				899B0926261268BE00998E33 /* Favorites.swift in Sources */,
 				C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */,
