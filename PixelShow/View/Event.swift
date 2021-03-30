@@ -9,7 +9,18 @@ import SwiftUI
 
 struct Event: View {
     var body: some View {
-        Text("Evento")
+        NavigationView {
+            VStack{
+                ScrollView{
+                    Image("Banner")
+                        .padding()
+                    
+                    ExploreCategories()
+                    EventNews()
+                }
+            }
+            .navigationTitle("Pixel Show")
+        }
     }
 }
 
@@ -18,3 +29,5 @@ struct Event_Previews: PreviewProvider {
         Event()
     }
 }
+
+//ÍconeLupa = "magnifyingglass"
