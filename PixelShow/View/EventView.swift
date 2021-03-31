@@ -2,14 +2,22 @@
 //  Event.swift
 //  PixelShow
 //
-//  Created by Thaís Fernandes on 29/03/21.
+//  Created by Julia Silveira de Souza on 29/03/21.
 //
 
 import SwiftUI
 
 struct EventView: View {
     var body: some View {
-        Text("Evento")
+        NavigationView {
+            VStack{
+                ScrollView(showsIndicators: false) {
+                    EventToolbar()
+                    ExploreCategories()
+                    EventNews()
+                }
+            }
+        }
     }
 }
 
@@ -18,3 +26,4 @@ struct EventView_Previews: PreviewProvider {
         EventView()
     }
 }
+
