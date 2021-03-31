@@ -14,7 +14,7 @@ struct ExploreCategories: View {
             Text("Explore esse universo")
                 .bold()
                 .font(.system(size: 19))
-                .frame(width: 370, height: 30, alignment: .leading)
+                .frame(width: 370, height: nil, alignment: .leading)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
