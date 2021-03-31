@@ -96,9 +96,9 @@ struct CalendarView: View {
                 case .geral:
                     Events(events: listEvents())
                 case .dia1:
-                    Events(events: listEvents())
+                    Events(events: listEventsDay1())
                 case .dia2:
-                    Events(events: listEvents())
+                    Events(events: listEventsDay2())
                 }
                 
                 Spacer()
