@@ -19,8 +19,10 @@ struct SingleInterest: View {
             RoundedRectangle(cornerRadius: 8, style: .continuous)
                 .stroke(Color.black, lineWidth: 1)
                 
-            Text(interest.rawValue).padding()
-            .onTapGesture (count: 1, perform: { didTap.toggle() })
+            Text(interest.rawValue)
+                .padding(.all, 10)
+                .font(.system(size: 10))
+                .onTapGesture (count: 1, perform: { didTap.toggle() })
         }.fixedSize()
     }
 }

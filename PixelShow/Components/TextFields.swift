@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct TextFields: View {
-    @State var userName: String = ""
+    @State var firstName: String = ""
+    @State var lastName: String = ""
+    @State var company: String = ""
+    @State var position: String = ""
+
     var body: some View {
-        VStack{
-            TextField("First name", text: $userName)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+        VStack (alignment: .leading){
+            Text("First Name")
             
-            TextField("Last name", text: $userName)
+            TextField("John", text: $firstName)
+                .underlineTextFieldStyle()
+            
+            Text("Last Name")
+            
+            TextField("Appleseed", text: $lastName)
+                .underlineTextFieldStyle()
+            
+            Text("Company")
 
-            TextField("Company", text: $userName)
+            TextField("Apple", text: $company)
+                .underlineTextFieldStyle()
+            
+            Text("Position")
 
-            TextField("Postion", text: $userName)
+            TextField("UX Designer", text: $position)
+                .underlineTextFieldStyle()
 
         }.padding()
     }

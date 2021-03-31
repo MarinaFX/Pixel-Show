@@ -18,8 +18,8 @@ struct InterestMatrix: View {
             
             ForEach(0..<4) { _ in
                 HStack {
-                    ForEach(0..<2) { _ in
-                        SingleInterest(interest: Interest.arquitetura)
+                    ForEach(0..<4) { aux in
+                        SingleInterest(interest: Interest.designGráfico)
                     }
                 }
             }
