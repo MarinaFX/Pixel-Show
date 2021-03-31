@@ -11,12 +11,19 @@ struct EventView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                EventToolbar()
-                    .frame(height: 0)
+                Image("Banner")
                 ExploreCategories()
                 EventNews()
             }
+            
+            .navigationTitle("Pixel Show")
+            .toolbar {
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Image(systemName: "magnifyingglass")
+                })
+            }
         }
+        .accentColor(.black)
     }
 }
 

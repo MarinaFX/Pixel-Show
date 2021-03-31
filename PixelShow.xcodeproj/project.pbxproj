@@ -20,8 +20,7 @@
 		899B0926261268BE00998E33 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0925261268BE00998E33 /* FavoritesView.swift */; };
 		9F5F36CB2613A9B500D7B20B /* ExploreCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */; };
 		9F5F36D02613A9FF00D7B20B /* EventNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36CF2613A9FF00D7B20B /* EventNews.swift */; };
-		9F5F36D52613D13800D7B20B /* EventToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36D42613D13800D7B20B /* EventToolbar.swift */; };
-		9F5F36DA2614FA9700D7B20B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36D92614FA9700D7B20B /* OnboardingView.swift */; };
+		9F5F36DA2614FA9700D7B20B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36D92614FA9700D7B20B /* SplashView.swift */; };
 		9F5F36E7261500FD00D7B20B /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36E6261500FD00D7B20B /* LogoImage.swift */; };
 		C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FAE26137CE0000BC492 /* Event.swift */; };
 		C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FB926137E59000BC492 /* Interest.swift */; };
@@ -65,8 +64,7 @@
 		899B0925261268BE00998E33 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCategories.swift; sourceTree = "<group>"; };
 		9F5F36CF2613A9FF00D7B20B /* EventNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNews.swift; sourceTree = "<group>"; };
-		9F5F36D42613D13800D7B20B /* EventToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventToolbar.swift; sourceTree = "<group>"; };
-		9F5F36D92614FA9700D7B20B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9F5F36D92614FA9700D7B20B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		9F5F36E6261500FD00D7B20B /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
 		C0FE7FAE26137CE0000BC492 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C0FE7FB926137E59000BC492 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
@@ -150,7 +148,7 @@
 				899B091B2612680600998E33 /* ContentListView.swift */,
 				899B09202612689000998E33 /* ConnectionsView.swift */,
 				899B0925261268BE00998E33 /* FavoritesView.swift */,
-				9F5F36D92614FA9700D7B20B /* OnboardingView.swift */,
+				9F5F36D92614FA9700D7B20B /* SplashView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,7 +160,6 @@
 				1B3CB6772613A519000ACCCB /* TextFields.swift */,
 				9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */,
 				9F5F36CF2613A9FF00D7B20B /* EventNews.swift */,
-				9F5F36D42613D13800D7B20B /* EventToolbar.swift */,
 				9F5F36E6261500FD00D7B20B /* LogoImage.swift */,
 			);
 			path = Components;
@@ -319,7 +316,7 @@
 				899B09122612671D00998E33 /* EventView.swift in Sources */,
 				1B025E1A26125A5E00FA5706 /* ContentView.swift in Sources */,
 				899B09212612689000998E33 /* ConnectionsView.swift in Sources */,
-				9F5F36DA2614FA9700D7B20B /* OnboardingView.swift in Sources */,
+				9F5F36DA2614FA9700D7B20B /* SplashView.swift in Sources */,
 				9F5F36CB2613A9B500D7B20B /* ExploreCategories.swift in Sources */,
 				1B025E1826125A5E00FA5706 /* PixelShowApp.swift in Sources */,
 				C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */,
@@ -333,7 +330,6 @@
 				899B0917261267A200998E33 /* CalendarView.swift in Sources */,
 				C0FE7FC226137FB0000BC492 /* Content.swift in Sources */,
 				C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */,
-				9F5F36D52613D13800D7B20B /* EventToolbar.swift in Sources */,
 				899B091C2612680600998E33 /* ContentListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

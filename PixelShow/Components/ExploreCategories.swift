@@ -11,7 +11,6 @@ struct ExploreCategories: View {
     var body: some View {
         
         VStack{
-            Image("Banner")
             Text("Explore esse universo")
                 .bold()
                 .font(.system(size: 19))

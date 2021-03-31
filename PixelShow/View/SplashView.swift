@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
+struct SplashView: View {
     var body: some View {
         Image("fundo1")
             .resizable()
@@ -16,9 +16,8 @@ struct OnboardingView: View {
     }
 }
 
-
-struct OnboardingView_Previews: PreviewProvider {
+struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        SplashView()
     }
 }
