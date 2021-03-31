@@ -15,7 +15,7 @@ struct EventToolbar: View {
                     HStack {
                         Text("Pixel Show")
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            .font(.system(size: 32))
+                            .font(.system(size: 40))
                     }
                 }
                 

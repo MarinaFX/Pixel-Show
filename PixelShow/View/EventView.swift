@@ -10,12 +10,11 @@ import SwiftUI
 struct EventView: View {
     var body: some View {
         NavigationView {
-            VStack{
-                ScrollView(showsIndicators: false) {
-                    EventToolbar()
-                    ExploreCategories()
-                    EventNews()
-                }
+            ScrollView(showsIndicators: false) {
+                EventToolbar()
+                    .frame(height: 0)
+                ExploreCategories()
+                EventNews()
             }
         }
     }
@@ -26,4 +25,3 @@ struct EventView_Previews: PreviewProvider {
         EventView()
     }
 }
-
