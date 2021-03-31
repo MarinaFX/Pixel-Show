@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SingleInterest: View {
     @State var didTap: Bool = false
-    @State var interest: Interest
+    @State var interest: String
 
     var body: some View {
         ZStack {
@@ -19,16 +19,16 @@ struct SingleInterest: View {
             RoundedRectangle(cornerRadius: 8, style: .continuous)
                 .stroke(Color.black, lineWidth: 1)
                 
-            Text(interest.rawValue)
-                .padding(.all, 10)
-                .font(.system(size: 10))
+            Text(interest)
+                .padding(.all, 6)
+                .font(.system(size: 12))
                 .onTapGesture (count: 1, perform: { didTap.toggle() })
-        }.fixedSize()
+        }.fixedSize().padding(.horizontal, 2)
     }
 }
 
 struct SingleInterest_Previews: PreviewProvider {
     static var previews: some View {
-        SingleInterest(interest: Interest.arquitetura)
+        SingleInterest(interest: "Design Gráfico")
     }
 }

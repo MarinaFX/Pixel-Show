@@ -8,22 +8,39 @@
 import SwiftUI
 
 struct InterestMatrix: View {
-    @State var didTap: Bool = false    
+    @State var didTap: Bool = false
+    var interests: [String] = ["Ilustração"
+                               ,"Motion"
+                               ,"Graphics"
+                               ,"Quadrinhos"
+                               ,"Graffiti"
+                               ,"Games"
+                               ,"Publicidade"
+                               ,"Cinema"
+                               ,"Tecnologia"
+                               ,"Design Gráfico"
+                               ,"Artes Visuais"
+                               ,"Make-Up"
+                               ,"3D"
+                               ,"Arquitetura"
+                               ,"Moda"]
     
     var body: some View {
         VStack(alignment: .leading){
             Text("Interests")
                 .fontWeight(.bold)
-                .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
+                
             
-            ForEach(0..<4) { _ in
-                HStack {
-                    ForEach(0..<4) { aux in
-                        SingleInterest(interest: Interest.designGráfico)
+            ScrollView(.horizontal) {
+                ForEach(0..<2) { _ in
+                    HStack {
+                        ForEach(interests, id:\.self) { aux in
+                            SingleInterest(interest: aux)
+                        }
                     }
                 }
             }
-        }
+        }.padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 0))
     }
 }
 
