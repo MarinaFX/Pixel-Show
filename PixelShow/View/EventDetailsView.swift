@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct EventDetailsView: View {
     let event: Event
@@ -16,13 +17,7 @@ struct EventDetailsView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading) {
                         
-                        VStack {
-                        }
-                        .frame(maxWidth: .infinity, minHeight: CGFloat(200))
-                        .background(Color.gray)
-                        .cornerRadius(5.0)
-                        .padding(.top)
-                        .padding(.bottom, 30)
+                        Video()
                         
                         Description(event: event)
                         
