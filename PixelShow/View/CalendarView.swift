@@ -16,43 +16,96 @@ struct CalendarView: View {
     @State var tab: Tab = .geral
     
     var body: some View {
-        VStack {
-            HStack {
-                Button(action: {
-                    tab = .geral
-                }, label: {
-                    Text("Geral")
-                        .foregroundColor(Color.black)
-                })
+        NavigationView {
+            VStack {
+                HStack(alignment: .center) {
+                    
+                    Button(action: {
+                        tab = .geral
+                    }, label: {
+                        VStack {
+                            if tab == .geral {
+                                Text("Geral")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("BlackWhiteDark"))
+                                
+                                Rectangle().fill(Color("Secondary1"))
+                                    .frame(width: 43, height: 4, alignment: .center)
+                                    .offset(y:-8)
+                                
+                            } else {
+                                Text("Geral")
+                                    .foregroundColor(Color("BlackWhiteDark"))
+                                    .offset(y:-8)
+                            }
+                        }
+                    })
+                    .padding(.trailing, 26)
+                    
+                    Button(action: {
+                        tab = .dia1
+                    }, label: {
+                        VStack {
+                            if tab == .dia1 {
+                                Text("Dia 1")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("BlackWhiteDark"))
+                                
+                                Rectangle().fill(Color("Secondary1"))
+                                    .frame(width: 43, height: 4, alignment: .center)
+                                    .offset(y:-8)
+                                
+                            } else {
+                                Text("Dia 1")
+                                    .foregroundColor(Color("BlackWhiteDark"))
+                                    .offset(y:-8)
+                            }
+                        }
+                    })
+                    .padding(.trailing, 26)
+
+                    Button(action: {
+                        tab = .dia2
+                    }, label: {
+                        VStack {
+                            if tab == .dia2 {
+                                Text("Dia 2")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("BlackWhiteDark"))
+                                    .multilineTextAlignment(.center)
+                                
+                                Rectangle().fill(Color("Secondary1"))
+                                    .frame(width: 43, height: 4, alignment: .center)
+                                    .offset(y:-8)
+                                
+                            } else {
+                                Text("Dia 2")
+                                    .foregroundColor(Color("BlackWhiteDark"))
+                                    .offset(y:-8)
+                            }
+                        }
+                    })
+                    
+                    Spacer()
+                    
+                    Image(systemName: "slider.horizontal.3")
+                }
+                .padding()
                 
-                Button(action: {
-                    tab = .dia1
-                }, label: {
-                    Text("Dia 1")
-                        .foregroundColor(Color.black)
-                })
-                
-                Button(action: {
-                    tab = .dia2
-                }, label: {
-                    Text("Dia 2")
-                        .foregroundColor(Color.black)
-                })
+                switch tab {
+                case .geral:
+                    Events(events: listEvents())
+                case .dia1:
+                    Events(events: listEvents())
+                case .dia2:
+                    Events(events: listEvents())
+                }
                 
                 Spacer()
                 
-                Image(systemName: "slider.horizontal.3")
             }
-            .padding()
-            
-            switch tab {
-            case .geral:
-                Events(events: listEvents())
-            case .dia1:
-                Events(events: listEvents())
-            case .dia2:
-                Events(events: listEvents())
-            }
+            .navigationBarItems(trailing: Image(systemName: "magnifyingglass"))
+            .navigationBarTitle("Agenda", displayMode: .inline)
         }
     }
 }
@@ -60,5 +113,6 @@ struct CalendarView: View {
 struct Calendar_Previews: PreviewProvider {
     static var previews: some View {
         CalendarView()
+            .preferredColorScheme(.light)
     }
 }

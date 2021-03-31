@@ -11,19 +11,21 @@ struct EventRow: View {
     var event: Event
     
     var body: some View {
-        HStack(alignment: .top) {
+        HStack {
+            
             event.speakerPhoto
             
             VStack(alignment: .leading) {
                 Text(event.title)
+                    .foregroundColor(Color("BlackWhiteDark"))
                     .font(.system(size: 15))
                     .padding(.bottom, -5.0)
                 Text(event.speakerName)
                     .font(.caption)
                     .foregroundColor(Color.gray)
             }
-            .frame(width: 190, alignment: .leading)
-                        
+            
+            Spacer()
             Image(systemName: "heart.fill")
                 .foregroundColor(Color("Secondary1"))
                 .padding(.top, 2.0)

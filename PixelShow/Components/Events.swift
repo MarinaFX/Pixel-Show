@@ -11,12 +11,14 @@ struct Events: View {
     var events: [Event]
     
     var body: some View {
-        NavigationView {
+        VStack {
             List(events, id: \.title){ event in
                 NavigationLink(destination: EventRow(event: event)) {
                     EventRow(event: event)
+                        .padding(.vertical,10)
                 }
             }
+            .listStyle(PlainListStyle())
         }
     }
 }
