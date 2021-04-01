@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "Camada 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Camada 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
