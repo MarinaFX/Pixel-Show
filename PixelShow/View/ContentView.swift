@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         TabView() {
             EventView()
@@ -39,13 +40,14 @@ struct ContentView: View {
                     Image(systemName: "heart")
                     Text("Favoritos")
                 }
-        }.accentColor(Color("Secondary1"))
+        }
+        .accentColor(Color("Secondary1"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
     }
 }
