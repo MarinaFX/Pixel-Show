@@ -9,7 +9,14 @@ import SwiftUI
 
 struct FavoritesView: View {
     var body: some View {
-        Text("Favoritos")
+        NavigationView {
+            VStack {
+                Events(events: listEvents())
+                Spacer()
+            }
+            .navigationBarItems(trailing: Image(systemName: "magnifyingglass"))
+            .navigationBarTitle("Favorites", displayMode: .inline)
+        }
     }
 }
 
