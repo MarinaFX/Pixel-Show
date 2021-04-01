@@ -26,7 +26,7 @@
 		89AE35532615007D0037654E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE35522615007D0037654E /* Video.swift */; };
 		9F5F36CB2613A9B500D7B20B /* ExploreCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */; };
 		9F5F36D02613A9FF00D7B20B /* EventNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36CF2613A9FF00D7B20B /* EventNews.swift */; };
-		9F5F36D52613D13800D7B20B /* EventToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36D42613D13800D7B20B /* EventToolbar.swift */; };
+		9F5F36DA2614FA9700D7B20B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36D92614FA9700D7B20B /* SplashView.swift */; };
 		C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FAE26137CE0000BC492 /* Event.swift */; };
 		C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FB926137E59000BC492 /* Interest.swift */; };
 		C0FE7FC226137FB0000BC492 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE7FC126137FB0000BC492 /* Content.swift */; };
@@ -77,7 +77,7 @@
 		89AE35522615007D0037654E /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCategories.swift; sourceTree = "<group>"; };
 		9F5F36CF2613A9FF00D7B20B /* EventNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNews.swift; sourceTree = "<group>"; };
-		9F5F36D42613D13800D7B20B /* EventToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventToolbar.swift; sourceTree = "<group>"; };
+		9F5F36D92614FA9700D7B20B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		C0FE7FAE26137CE0000BC492 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C0FE7FB926137E59000BC492 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		C0FE7FC126137FB0000BC492 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 		1B025E4E26125BD000FA5706 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F5F36D92614FA9700D7B20B /* SplashView.swift */,
 				1B025E1926125A5E00FA5706 /* ContentView.swift */,
 				899B09112612671D00998E33 /* EventView.swift */,
 				899B0916261267A200998E33 /* CalendarView.swift */,
@@ -179,7 +180,6 @@
 				896DDC262613C66F0048337A /* Description.swift */,
 				9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */,
 				9F5F36CF2613A9FF00D7B20B /* EventNews.swift */,
-				9F5F36D42613D13800D7B20B /* EventToolbar.swift */,
 				89A2BAF52614EEF60028CAD4 /* CustomButton.swift */,
 				89AE35522615007D0037654E /* Video.swift */,
 			);
@@ -339,6 +339,7 @@
 				1B025E1A26125A5E00FA5706 /* ContentView.swift in Sources */,
 				89A2BAF62614EEF60028CAD4 /* CustomButton.swift in Sources */,
 				899B09212612689000998E33 /* ConnectionsView.swift in Sources */,
+				9F5F36DA2614FA9700D7B20B /* SplashView.swift in Sources */,
 				9F5F36CB2613A9B500D7B20B /* ExploreCategories.swift in Sources */,
 				1B025E1826125A5E00FA5706 /* PixelShowApp.swift in Sources */,
 				C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */,
@@ -355,7 +356,6 @@
 				C0FE7FC226137FB0000BC492 /* Content.swift in Sources */,
 				C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */,
 				896DDC222613AAB20048337A /* EventDetailsView.swift in Sources */,
-				9F5F36D52613D13800D7B20B /* EventToolbar.swift in Sources */,
 				89AE358026161A080037654E /* OnboardingView.swift in Sources */,
 				89AE35532615007D0037654E /* Video.swift in Sources */,
 				899B091C2612680600998E33 /* ContentListView.swift in Sources */,
