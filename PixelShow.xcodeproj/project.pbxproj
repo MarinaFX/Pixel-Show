@@ -12,13 +12,14 @@
 		1B025E1C26125A6100FA5706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B025E1B26125A6100FA5706 /* Assets.xcassets */; };
 		1B025E1F26125A6100FA5706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B025E1E26125A6100FA5706 /* Preview Assets.xcassets */; };
 		1B3CB6702613A50A000ACCCB /* InterestMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB66F2613A50A000ACCCB /* InterestMatrix.swift */; };
-		1B3CB6782613A519000ACCCB /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6772613A519000ACCCB /* TextFields.swift */; };
+		1B3CB6782613A519000ACCCB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6772613A519000ACCCB /* CustomTextField.swift */; };
 		1B3CB6852613CAD9000ACCCB /* SingleInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6842613CAD9000ACCCB /* SingleInterest.swift */; };
 		1B3CB6902613E508000ACCCB /* UnderlineTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB68F2613E508000ACCCB /* UnderlineTextFieldStyle.swift */; };
 		1B3CB6952613E8A2000ACCCB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6942613E8A2000ACCCB /* RegistrationView.swift */; };
 		1B3CB69A2613EC37000ACCCB /* UserPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6992613EC37000ACCCB /* UserPicture.swift */; };
 		1B3CB69F2613F3DD000ACCCB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB69E2613F3DD000ACCCB /* ImagePicker.swift */; };
 		1B3CB6FB26150CFF000ACCCB /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6FA26150CFF000ACCCB /* FlowLayout.swift */; };
+		1B3CB70B26164185000ACCCB /* SecondRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB70A26164185000ACCCB /* SecondRegistrationView.swift */; };
 		899B09122612671D00998E33 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B09112612671D00998E33 /* EventView.swift */; };
 		899B0917261267A200998E33 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0916261267A200998E33 /* CalendarView.swift */; };
 		899B091C2612680600998E33 /* ContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B091B2612680600998E33 /* ContentListView.swift */; };
@@ -62,13 +63,14 @@
 		1B025E2526125A6100FA5706 /* PixelShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B025E3026125A6100FA5706 /* PixelShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3CB66F2613A50A000ACCCB /* InterestMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestMatrix.swift; sourceTree = "<group>"; };
-		1B3CB6772613A519000ACCCB /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		1B3CB6772613A519000ACCCB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1B3CB6842613CAD9000ACCCB /* SingleInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInterest.swift; sourceTree = "<group>"; };
 		1B3CB68F2613E508000ACCCB /* UnderlineTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldStyle.swift; sourceTree = "<group>"; };
 		1B3CB6942613E8A2000ACCCB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		1B3CB6992613EC37000ACCCB /* UserPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPicture.swift; sourceTree = "<group>"; };
 		1B3CB69E2613F3DD000ACCCB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1B3CB6FA26150CFF000ACCCB /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		1B3CB70A26164185000ACCCB /* SecondRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRegistrationView.swift; sourceTree = "<group>"; };
 		899B09112612671D00998E33 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		899B0916261267A200998E33 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		899B091B2612680600998E33 /* ContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				899B09202612689000998E33 /* ConnectionsView.swift */,
 				899B0925261268BE00998E33 /* FavoritesView.swift */,
 				1B3CB6942613E8A2000ACCCB /* RegistrationView.swift */,
+				1B3CB70A26164185000ACCCB /* SecondRegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				1B3CB66F2613A50A000ACCCB /* InterestMatrix.swift */,
-				1B3CB6772613A519000ACCCB /* TextFields.swift */,
+				1B3CB6772613A519000ACCCB /* CustomTextField.swift */,
 				1B3CB6842613CAD9000ACCCB /* SingleInterest.swift */,
 				1B3CB68F2613E508000ACCCB /* UnderlineTextFieldStyle.swift */,
 				1B3CB6992613EC37000ACCCB /* UserPicture.swift */,
@@ -341,7 +344,7 @@
 				C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */,
 				1B3CB6952613E8A2000ACCCB /* RegistrationView.swift in Sources */,
 				1B3CB69F2613F3DD000ACCCB /* ImagePicker.swift in Sources */,
-				1B3CB6782613A519000ACCCB /* TextFields.swift in Sources */,
+				1B3CB6782613A519000ACCCB /* CustomTextField.swift in Sources */,
 				C0FE7FC72613801A000BC492 /* Person.swift in Sources */,
 				899B0926261268BE00998E33 /* FavoritesView.swift in Sources */,
 				1B3CB6902613E508000ACCCB /* UnderlineTextFieldStyle.swift in Sources */,
@@ -354,6 +357,7 @@
 				1B3CB6FB26150CFF000ACCCB /* FlowLayout.swift in Sources */,
 				C0FE7FC226137FB0000BC492 /* Content.swift in Sources */,
 				C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */,
+				1B3CB70B26164185000ACCCB /* SecondRegistrationView.swift in Sources */,
 				9F5F36D52613D13800D7B20B /* EventToolbar.swift in Sources */,
 				899B091C2612680600998E33 /* ContentListView.swift in Sources */,
 			);
