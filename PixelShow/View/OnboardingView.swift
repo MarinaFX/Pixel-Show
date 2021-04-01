@@ -14,7 +14,6 @@ struct OnboardingView: View {
         
         ScrollView {
             TabView {
-                
                 OnboardingScreenView(image: Image("OnboardingA"), color: Color("Secondary3"), text: "O Maior Festival de Criatividade\nda América Latina!")
                 
                 OnboardingScreenView(image: Image("OnboardingB"), color: Color("Secondary4"), text: "Prepare-se para um momento único de exploração criativa!")
