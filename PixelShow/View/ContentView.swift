@@ -8,16 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    enum Tabs {
-        case feed
-        case search
-        case profile
-    }
-    
-    @State var selectedTab: Tabs = .profile
     
     var body: some View {
-        TabView(selection: $selectedTab) {
+        TabView() {
             EventView()
                 .tabItem {
                     Image(systemName: "puzzlepiece")
@@ -47,13 +40,14 @@ struct ContentView: View {
                     Image(systemName: "heart")
                     Text("Favoritos")
                 }
-        }.accentColor(Color("Secondary1"))
+        }
+        .accentColor(Color("Secondary1"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
     }
 }

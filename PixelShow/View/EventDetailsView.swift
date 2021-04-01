@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct EventDetailsView: View {
+    
+    @Environment(\.presentationMode) var presentation
+    
     let event: Event
     
     var body: some View {
@@ -16,21 +20,16 @@ struct EventDetailsView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(alignment: .leading) {
                         
-                        VStack {
-                        }
-                        .frame(maxWidth: .infinity, minHeight: CGFloat(200))
-                        .background(Color.gray)
-                        .cornerRadius(5.0)
-                        .padding(.top)
-                        .padding(.bottom, 30)
+                        Video()
                         
                         Description(event: event)
                         
                         Text(event.textDescription)
+                            .foregroundColor(Color("BlackWhiteDark"))
                             .lineSpacing(1.3)
-                            .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                            .fixedSize(horizontal: false, vertical: true)
                             .padding(.vertical)
-
+                        
                         Text("Palestrante nas redes")
                             .font(.title3)
                             .fontWeight(.bold)
@@ -45,12 +44,20 @@ struct EventDetailsView: View {
                 }
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
+                    
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Image(systemName: "chevron.backward")
+                        Button(action: {
+                            presentation.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "chevron.backward")
+                        })
+                        
                     }
                     
                     ToolbarItem(placement: .principal) {
-                        Text("Desenho de Imprensa")
+                        Text(event.title)
+                            .lineLimit(1)
+                            .frame(width: 250, alignment: .center)
                     }
                 }
                 
@@ -66,16 +73,18 @@ struct EventDetailsView: View {
 struct EventDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         EventDetailsView(event: listEvents()[0])
+            .preferredColorScheme(.dark)
     }
 }
 
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let standard = UINavigationBarAppearance()
-        standard.backgroundColor = .white
-        
-        navigationBar.standardAppearance = standard
-    }
-}
+//extension UINavigationController {
+//    override open func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        let standard = UINavigationBarAppearance()
+//        standard.backgroundColor = .white
+//        
+//        //navigationBar.standardAppearance = standard
+//        
+//    }
+//}
