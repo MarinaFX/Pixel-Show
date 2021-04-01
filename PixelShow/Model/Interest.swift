@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum Interest: String, CaseIterable {
+enum Interest: String, CaseIterable {    
     case GCI
     case ilustração = "Ilustração"
     case motion = "Motion"

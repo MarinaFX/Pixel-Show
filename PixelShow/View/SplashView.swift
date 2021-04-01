@@ -19,7 +19,7 @@ struct SplashView: View {
                         .resizable()
                         .ignoresSafeArea()
                             
-                    Image("logo1")
+                    Image("Logo1")
                         .position(x: 200, y: -200)
                         .frame(height: UIScreen.main.bounds.height / 2)
                         .padding(.vertical, -200)
