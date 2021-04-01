@@ -12,7 +12,7 @@ struct SplashView: View {
     var body: some View {
         VStack {
             if self.isActive {
-                EventView()
+                OnboardingView()
             } else {
                 VStack {
                     Image("fundo1")
