@@ -16,7 +16,7 @@ struct ContentView: View {
                     Text("Evento")
                 }
             
-            RegistrationView()
+            CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Agenda")

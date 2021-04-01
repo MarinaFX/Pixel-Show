@@ -15,29 +15,27 @@ struct TextFields: View {
 
     var body: some View {
         VStack (alignment: .leading){
-            Text("First Name")
+            Text("Primeiro Nome")
             
             TextField("John", text: $firstName)
                 .underlineTextFieldStyle()
             
-            Text("Last Name")
+            Text("Último Nome")
             
             TextField("Appleseed", text: $lastName)
                 .underlineTextFieldStyle()
             
-            Text("Company")
+            Text("Empresa")
 
             TextField("Apple", text: $company)
                 .underlineTextFieldStyle()
             
-            Text("Position")
+            Text("Cargo")
 
             TextField("UX Designer", text: $position)
                 .underlineTextFieldStyle()
             
-            Spacer()
-
-        }.padding()
+        }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
     }
 }
 

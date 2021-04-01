@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     var body: some View {
-        ScrollView {
+        VStack {
             UserPicture()
             
             TextFields()
@@ -17,12 +17,16 @@ struct RegistrationView: View {
             InterestMatrix()
             
             Spacer()
+                        
+            VStack {
+                Text("Ao clicar em ").font(.system(size: 12)) +
+                    Text("Cadastrar ").bold().font(.system(size: 12)) +
+                    Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
+            }.frame(width: 350, height: nil, alignment: .leading).padding(.bottom, 20)
             
-            Text("Ao clicar em ").font(.system(size: 12)) +
-            Text("Cadastrar ").bold().font(.system(size: 12)) +
-            Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
+            CustomButton(label: "Cadastrar").padding(.horizontal, 20)
             
-            CustomButton(label: "Cadastrar").padding()
+            Spacer()
         }
     }
 }

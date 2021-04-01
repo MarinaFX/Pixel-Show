@@ -27,11 +27,11 @@ struct InterestMatrix: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            Text("Interests")
+            Text("Interesses")
                 .fontWeight(.bold)
             
             SingleInterest(interest: "")
-        }.padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 0))
+        }.padding(EdgeInsets(top: 16, leading: 16, bottom: 10, trailing: 0))
     }
 }
 

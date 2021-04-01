@@ -25,9 +25,7 @@ struct SingleInterest: View {
                                ,"publicidade"
                                ,"make-Up"
                                ,"cinema"
-                               ,"tecnologia"
-                               ,"arquitetura"
-                               ,"moda"]) { category in
+                               ,"tecnologia"]) { category in
             Text(category)
                 .font(.system(size: 12))
                 .onTapGesture (count: 1, perform: {
