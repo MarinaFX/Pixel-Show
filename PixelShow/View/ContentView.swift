@@ -8,16 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    enum Tabs {
-        case feed
-        case search
-        case profile
-    }
-    
-    @State var selectedTab: Tabs = .profile
-    
     var body: some View {
-        TabView(selection: $selectedTab) {
+        TabView() {
             EventView()
                 .tabItem {
                     Image(systemName: "puzzlepiece")

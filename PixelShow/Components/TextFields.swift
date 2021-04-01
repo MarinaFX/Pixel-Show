@@ -34,6 +34,8 @@ struct TextFields: View {
 
             TextField("UX Designer", text: $position)
                 .underlineTextFieldStyle()
+            
+            Spacer()
 
         }.padding()
     }

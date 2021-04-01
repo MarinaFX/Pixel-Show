@@ -9,13 +9,20 @@ import SwiftUI
 
 struct RegistrationView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             UserPicture()
             
             TextFields()
             
             InterestMatrix()
             
+            Spacer()
+            
+            Text("Ao clicar em ").font(.system(size: 12)) +
+            Text("Cadastrar ").bold().font(.system(size: 12)) +
+            Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
+            
+            CustomButton(label: "Cadastrar").padding()
         }
     }
 }
