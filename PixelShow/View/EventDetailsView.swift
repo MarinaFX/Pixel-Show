@@ -30,6 +30,7 @@ struct EventDetailsView: View {
                         Description(event: event)
                         
                         Text(event.textDescription)
+                            .foregroundColor(Color("BlackWhiteDark"))
                             .lineSpacing(1.3)
                             .fixedSize(horizontal: false, vertical: true)
                             .padding(.vertical)
@@ -61,7 +62,7 @@ struct EventDetailsView: View {
                     ToolbarItem(placement: .principal) {
                         Text(event.title)
                             .lineLimit(1)
-                            .frame(width: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 250, alignment: .center)
                     }
                 }
                 
@@ -76,17 +77,19 @@ struct EventDetailsView: View {
 
 struct EventDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        EventDetailsView(event: listEvents()[3])
+        EventDetailsView(event: listEvents()[0])
+            .preferredColorScheme(.dark)
     }
 }
 
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let standard = UINavigationBarAppearance()
-        standard.backgroundColor = .white
-        
-        navigationBar.standardAppearance = standard
-    }
-}
+//extension UINavigationController {
+//    override open func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        let standard = UINavigationBarAppearance()
+//        standard.backgroundColor = .white
+//        
+//        //navigationBar.standardAppearance = standard
+//        
+//    }
+//}

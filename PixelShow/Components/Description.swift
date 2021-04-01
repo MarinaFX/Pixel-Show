@@ -21,7 +21,7 @@ struct Description: View {
                 
                 Text("Dia \(event.date) - \(event.hour)")
                     .font(.subheadline)
-                    .foregroundColor(Color("Secondary2"))
+                    .foregroundColor(Color("GrayWhiteDark"))
             }
             
             Spacer()
