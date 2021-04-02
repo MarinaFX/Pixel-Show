@@ -42,7 +42,7 @@ struct SingleInterest: View {
                 .foregroundColor(tappedItems.contains(category) ? Color.white : Color.black)
                 .background(ZStack{
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .foregroundColor(tappedItems.contains(category) ? Color("Secondary4") : Color.clear)
+                        .foregroundColor(tappedItems.contains(category) ? Color("Secondary5") : Color.clear)
                     
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
                         .stroke(tappedItems.contains(category) ? Color.clear : Color.gray, lineWidth: 1)

@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct SplashView: View {
-@State var isActive: Bool = false
+    @State var isActive: Bool = false
+    
     var body: some View {
         VStack {
             if self.isActive {
-                EventView()
+                OnboardingView()
             } else {
-                VStack {
+                ZStack {
                     Image("fundo1")
                         .resizable()
                         .ignoresSafeArea()
                             
-                    Image("Logo1")
-                        .position(x: 200, y: -200)
-                        .frame(height: UIScreen.main.bounds.height / 2)
-                        .padding(.vertical, -200)
+                    Image("Logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 179)
+                        .padding(.horizontal)
                 }
                 .ignoresSafeArea()
             }

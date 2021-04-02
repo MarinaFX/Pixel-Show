@@ -29,10 +29,11 @@ struct SecondRegistrationView: View {
                 Text("Ao clicar em ").font(.system(size: 12)) +
                     Text("Cadastrar ").bold().font(.system(size: 12)) +
                     Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
-            }.frame(width: 350, height: nil, alignment: .leading).padding(.bottom, 20)
+                
+            }.frame(width: 350, alignment: .leading).padding(.bottom, 20).padding(.horizontal)
             
-            CustomButton(label: "Cadastrar").padding(.horizontal, 20)
-            
+            CustomButton(label: "Cadastrar").padding(.horizontal)
+
         }
     }
 }

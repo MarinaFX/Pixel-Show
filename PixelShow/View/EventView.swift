@@ -11,7 +11,7 @@ struct EventView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                Image("Banner")
+                Image("Banner").resizable().scaledToFit()
                 ExploreCategories()
                 EventNews()
             }

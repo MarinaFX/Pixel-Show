@@ -10,47 +10,47 @@ import SwiftUI
 struct ExploreCategories: View {
     var body: some View {
         
-        VStack{
+        VStack(alignment: .leading){
             Text("Explore esse universo")
                 .bold()
                 .font(.system(size: 19))
-                .frame(width: 370, height: nil, alignment: .leading)
+                .padding(.horizontal)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     VStack {
-                        Image("Ilustracao")
+                        Image("Ilustracao").resizable().frame(width: 66, height: 66)
                         Text("Ilustração")
                     }
-                    .frame(width: 90, height: nil, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     VStack {
-                        Image("Arquitetura")
+                        Image("Arquitetura").resizable().frame(width: 66, height: 66)
                         Text("Arquitetura")
                     }
-                    .frame(width: 90, height: nil, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     VStack {
-                        Image("Games")
+                        Image("Games").resizable().frame(width: 66, height: 66)
                         Text("Games")
                     }
-                    .frame(width: 90, height: nil, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     VStack {
-                        Image("Cinema")
+                        Image("Cinema").resizable().frame(width: 66, height: 66)
                         Text("Cinema")
                     }
-                    .frame(width: 90, height: nil, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     VStack {
-                        Image("Publicidade")
+                        Image("Publicidade").resizable().frame(width: 66, height: 66)
                         Text("Publicidade")
                     }
-                    .frame(width: 90, height: nil, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                 }
             }
