@@ -9,19 +9,31 @@ import SwiftUI
 
 struct OnboardingLoginScreen: View {
     var body: some View {
-        VStack {
-            Image("OnboardingC").resizable().scaledToFit()
-            Text("Uma busca pelo ócio e da\ncriatividade perdida!").multilineTextAlignment(.center).padding(.top, 10).padding(.horizontal).padding(.bottom, 40)
-            
-
-            CustomButton(label: "Login").padding(.horizontal)
-            CustomButton(label: "Quero me cadastrar", outline: true).padding(.horizontal)
-            
-
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("Secondary5"))
-        .foregroundColor(.white)
-        .ignoresSafeArea(.all)
+        NavigationView {
+            VStack {
+                Image("OnboardingC").resizable().scaledToFit()
+                
+                VStack {
+                    Text("Uma busca pelo ócio e da\ncriatividade perdida!").multilineTextAlignment(.center).padding(.top, 10).padding(.bottom, 40)
+                    
+                    
+                    NavigationLink(destination: LoginView()) {
+                        CustomButton(label: "Entrar", outline: true)
+                    }
+                    
+                    NavigationLink(destination: RegistrationView()) {
+                        CustomButton(label: "Quero me cadastrar")
+                    }
+                    
+                    CustomButton(label: "Entrar com Apple Id", color: Color.black, icon: Image(systemName: "applelogo"))
+                    
+                }.padding(.horizontal)
+                
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("Secondary5"))
+            .foregroundColor(.white)
+            .ignoresSafeArea(.all)
+        }
     }
 }
 
