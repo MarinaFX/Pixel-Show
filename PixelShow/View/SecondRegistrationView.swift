@@ -13,13 +13,14 @@ struct SecondRegistrationView: View {
     @State var confirmarSenha: String
     
     var body: some View {
-        VStack (alignment: .leading){
+        VStack{
             
-            VStack {
-                CustomTextField(text: "E-mail", placeholder: "exemplo123@email.com", input: email)
-                CustomTextField(text: "Senha", placeholder: "********", input: senha)
-                CustomTextField(text: "Confirmar Senha", placeholder: "********", input: confirmarSenha)
-            }
+            CustomTextField(text: "E-mail", placeholder: "exemplo123@email.com", input: email)
+            
+            CustomTextField(text: "Senha", placeholder: "********", input: senha)
+            
+            CustomTextField(text: "Confirmar Senha", placeholder: "********", input: confirmarSenha)
+            
             
             
             Spacer()
@@ -30,9 +31,9 @@ struct SecondRegistrationView: View {
                     Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
             }.frame(width: 350, height: nil, alignment: .leading).padding(.bottom, 20)
             
-            CustomButton(label: "Cadastrar")
+            CustomButton(label: "Cadastrar").padding(.horizontal, 20)
             
-        }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+        }
     }
 }
 

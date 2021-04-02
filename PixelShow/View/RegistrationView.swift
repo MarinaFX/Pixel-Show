@@ -35,9 +35,11 @@ struct RegistrationView: View {
                     Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
             }.frame(width: 350, height: nil, alignment: .leading).padding(.bottom, 20)
             
-            NavigationLink(destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: "")){
-                CustomButton(label: "Continuar").padding(.horizontal, 20)
-            }
+            NavigationLink(
+                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: ""),
+                label: {
+                    CustomButton(label: "Continuar").padding(.horizontal, 20)
+                })
             
             Spacer()
         }
