@@ -12,7 +12,7 @@ struct Description: View {
     
     var body: some View {
         HStack {
-            event.speakerPhoto.padding(.trailing, 6)
+            event.speakerPhoto.resizable().frame(width: 48, height: 48).padding(.trailing, 6)
                         
             VStack(alignment: .leading) {
                 Text(event.speakerName)

@@ -35,11 +35,12 @@ struct EventDetailsView: View {
                             .fontWeight(.bold)
                         
                         HStack {
-                            Image("behance")
-                            Image("linkedin")
-                            Image("twitter")
-                            Image("facebook")
-                        }.padding(.bottom, 80)
+                            Image("behance").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            Image("linkedin").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            Image("twitter").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            Image("facebook").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                        }
+                        .padding(.bottom, 80)
                     }
                 }
                 .navigationBarTitleDisplayMode(.inline)
@@ -73,6 +74,7 @@ struct EventDetailsView: View {
 struct EventDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         EventDetailsView(event: listEvents()[0])
+            
     }
 }
 

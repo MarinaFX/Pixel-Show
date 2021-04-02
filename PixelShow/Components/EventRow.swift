@@ -13,7 +13,7 @@ struct EventRow: View {
     var body: some View {
         HStack {
             
-            event.speakerPhoto
+            event.speakerPhoto.resizable().frame(width: 48, height: 48)
             
             VStack(alignment: .leading) {
                 Text(event.title)
