@@ -19,10 +19,10 @@ struct RegistrationView: View {
             UserPicture()
             
             VStack {
-                CustomTextField(text: "Primeiro Nome", placeholder: "John Appleseed", input: name)
-                CustomTextField(text: "Último Nome", placeholder: "John Appleseed", input: lastName)
-                CustomTextField(text: "Empresa", placeholder: "John Appleseed", input: company)
-                CustomTextField(text: "Cargo", placeholder: "John Appleseed", input: position)
+                CustomTextField(text: "Primeiro Nome", placeholder: "John", input: name)
+                CustomTextField(text: "Último Nome", placeholder: "Appleseed", input: lastName)
+                CustomTextField(text: "Empresa", placeholder: "Apple", input: company)
+                CustomTextField(text: "Cargo", placeholder: "UX Designer", input: position)
             }
             
             InterestMatrix()
@@ -35,9 +35,11 @@ struct RegistrationView: View {
                     Text("você concorda com os Termos e condições de uso.").font(.system(size: 12))
             }.frame(width: 350, height: nil, alignment: .leading).padding(.bottom, 20)
             
-            NavigationLink(destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: "")){
-                CustomButton(label: "Continuar").padding(.horizontal, 20)
-            }
+            NavigationLink(
+                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: ""),
+                label: {
+                    CustomButton(label: "Continuar").padding(.horizontal, 20)
+                })
             
             Spacer()
         }

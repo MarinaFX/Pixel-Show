@@ -13,13 +13,14 @@ struct SecondRegistrationView: View {
     @State var confirmarSenha: String
     
     var body: some View {
-        VStack (alignment: .leading){
+        VStack{
             
-            VStack {
-                CustomTextField(text: "E-mail", placeholder: "exemplo123@email.com", input: email)
-                CustomTextField(text: "Senha", placeholder: "********", input: senha)
-                CustomTextField(text: "Confirmar Senha", placeholder: "********", input: confirmarSenha)
-            }
+            CustomTextField(text: "E-mail", placeholder: "exemplo123@email.com", input: email)
+            
+            CustomTextField(text: "Senha", placeholder: "********", input: senha)
+            
+            CustomTextField(text: "Confirmar Senha", placeholder: "********", input: confirmarSenha)
+            
             
             
             Spacer()
@@ -31,8 +32,12 @@ struct SecondRegistrationView: View {
                 
             }.frame(width: 350, alignment: .leading).padding(.bottom, 20).padding(.horizontal)
             
-            CustomButton(label: "Cadastrar").padding(.horizontal)
-
+            
+            NavigationLink(
+                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: ""),
+                label: {
+                    CustomButton(label: "Cadastrar").padding(.horizontal)
+                })
         }
     }
 }
