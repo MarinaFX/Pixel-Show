@@ -15,7 +15,7 @@ struct RegistrationView: View {
 
 
     var body: some View {
-        VStack {
+        ScrollView {
             UserPicture()
             
             VStack {

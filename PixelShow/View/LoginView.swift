@@ -10,13 +10,27 @@ import SwiftUI
 struct LoginView: View {
     var body: some View {
         VStack {
-            Image("Logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 132)
+            VStack {
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 132)
+                
+                VStack(alignment: .trailing) {
+                    CustomTextField(text: "E-mail", placeholder: "abcd@email.com")
+                    CustomTextField(text: "Senha", placeholder: "********")
+                    
+                    Text("Esqueci a senha").padding(.horizontal)
+                }.padding(.top, 80)
+                
+            }.padding(.top, 120)
             
-            CustomTextField(text: "E-mail", placeholder: "abcd@email.com")
-            CustomTextField(text: "Senha", placeholder: "********")
+            Spacer()
+            
+            NavigationLink(destination: ContentView()) {
+                CustomButton(label: "Entrar").padding().padding(.bottom)
+            }
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("Secondary6"))
