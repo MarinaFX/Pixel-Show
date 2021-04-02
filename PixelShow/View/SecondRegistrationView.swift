@@ -32,8 +32,12 @@ struct SecondRegistrationView: View {
                 
             }.frame(width: 350, alignment: .leading).padding(.bottom, 20).padding(.horizontal)
             
-            CustomButton(label: "Cadastrar").padding(.horizontal)
-
+            
+            NavigationLink(
+                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: ""),
+                label: {
+                    CustomButton(label: "Cadastrar").padding(.horizontal)
+                })
         }
     }
 }

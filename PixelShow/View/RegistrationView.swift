@@ -19,10 +19,10 @@ struct RegistrationView: View {
             UserPicture()
             
             VStack {
-                CustomTextField(text: "Primeiro Nome", placeholder: "John Appleseed", input: name)
-                CustomTextField(text: "Último Nome", placeholder: "John Appleseed", input: lastName)
-                CustomTextField(text: "Empresa", placeholder: "John Appleseed", input: company)
-                CustomTextField(text: "Cargo", placeholder: "John Appleseed", input: position)
+                CustomTextField(text: "Primeiro Nome", placeholder: "John", input: name)
+                CustomTextField(text: "Último Nome", placeholder: "Appleseed", input: lastName)
+                CustomTextField(text: "Empresa", placeholder: "Apple", input: company)
+                CustomTextField(text: "Cargo", placeholder: "UX Designer", input: position)
             }
             
             InterestMatrix()
