@@ -11,11 +11,9 @@ struct ContentView: View {
     @State var isLogged = false
     
     var body: some View {
-        
         if isLogged {
-            
             TabView() {
-                EventView()
+                EventView(searchText: "")
                     .tabItem {
                         Image(systemName: "puzzlepiece")
                         Text("Evento")

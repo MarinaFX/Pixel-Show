@@ -25,6 +25,7 @@ struct OnboardingView: View {
                 .tabViewStyle(PageTabViewStyle())
             }.ignoresSafeArea(.all)
         }
+        .accentColor(.black)
     }
 }
 

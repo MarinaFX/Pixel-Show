@@ -9,9 +9,7 @@ import SwiftUI
 
 struct EventNews: View {
     var body: some View {
-        
         VStack(alignment: .leading) {
-            
             Text("O maior Festival de Criatividade da América Latina")
                 .bold()
                 .font(.system(size: 19))
