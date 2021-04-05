@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isLogged = false
+    @State var isLogged = true
     
     var body: some View {
         

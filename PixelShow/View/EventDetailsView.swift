@@ -35,10 +35,21 @@ struct EventDetailsView: View {
                             .fontWeight(.bold)
                         
                         HStack {
-                            Image("behance").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
-                            Image("linkedin").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
-                            Image("twitter").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
-                            Image("facebook").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            Link(destination: URL(string: "https://www.apple.com")!) {
+                                Image("behance").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            }
+                            
+                            Link(destination: URL(string: "https://www.linkedin.com")!) {
+                                Image("linkedin").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            }
+                            
+                            Link(destination: URL(string: "https://www.twitter.com")!) {
+                                Image("twitter").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            }
+                            
+                            Link(destination: URL(string: "https://www.facebook.com")!) {
+                                Image("facebook").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
+                            }
                         }
                         .padding(.bottom, 80)
                     }
@@ -74,7 +85,7 @@ struct EventDetailsView: View {
 struct EventDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         EventDetailsView(event: listEvents()[0])
-            
+        
     }
 }
 
