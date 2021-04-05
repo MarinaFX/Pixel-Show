@@ -23,7 +23,7 @@ struct ContentView: View {
                     Text("Agenda")
                 }
             
-            ContentListView()
+           ContentListView()
                 .tabItem {
                     Image(systemName: "square.3.stack.3d")
                     Text("Conteúdo")
