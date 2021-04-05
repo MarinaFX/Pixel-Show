@@ -13,7 +13,7 @@ enum Tab {
 
 struct CalendarView: View {
     
-    @State var tab: Tab = .geral
+    @State var tab: Tab = .dia1
     
     var body: some View {
         NavigationView {

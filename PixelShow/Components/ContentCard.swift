@@ -20,12 +20,11 @@ struct ContentCard: View {
                     .fontWeight(.medium)
                     .font(.system(size: 18))
                     .padding()
+                    .foregroundColor(.black)
             
             }
             .frame(width: 134, height: 38)
             .background(Color.white)
-           .cornerRadius(4)
-           .offset(x: -4,y: 0)
             
             
         }.padding(EdgeInsets(top: 0, leading: 20, bottom: 16, trailing: 20))
