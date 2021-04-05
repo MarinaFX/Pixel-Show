@@ -21,6 +21,7 @@ struct CustomSquaredImage: View {
                 .resizable()
                 .frame(width: 155, height: 115)
                 .opacity(0.5)
+                .foregroundColor(.black)
             
             VStack{
                 Image(systemName: "person.3.fill")
@@ -35,12 +36,15 @@ struct CustomSquaredImage: View {
                     .multilineTextAlignment(.center)
                 
             }
-        }.padding(EdgeInsets(top: 8, leading: 10, bottom: 8, trailing: 10))
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
     }
 }
 
 struct CustomSquaredImage_Previews: PreviewProvider {
     static var previews: some View {
         CustomSquaredImage(image: "pesquisasDesign", text: "Grupos de pesquisa em Design")
+            
     }
 }

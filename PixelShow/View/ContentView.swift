@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isLogged = false
+    @State var isLogged = true
     
     var body: some View {
         if isLogged {
@@ -24,13 +24,13 @@ struct ContentView: View {
                         Image(systemName: "calendar")
                         Text("Agenda")
                     }
-                
+            
                 ContentListView()
                     .tabItem {
                         Image(systemName: "square.3.stack.3d")
                         Text("Conteúdo")
                     }
-                
+            
                 ConnectionsView()
                     .tabItem {
                         Image(systemName: "person.2")
@@ -44,11 +44,11 @@ struct ContentView: View {
                     }
             }
             .accentColor(Color("Secondary1"))
+
         } else {
             SplashView(isActive: false) {
                 isLogged = true
             }
-
         }
     }
 }
@@ -56,5 +56,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

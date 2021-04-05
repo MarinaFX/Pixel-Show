@@ -56,6 +56,7 @@ struct ConnectionsView: View {
                     Spacer()
                     
                 }
+                
             }
             .navigationBarItems(trailing: Image(systemName: "magnifyingglass"))
             .navigationBarTitle("Conexões", displayMode: .inline)
