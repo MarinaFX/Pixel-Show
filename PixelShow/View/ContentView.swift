@@ -26,13 +26,13 @@ struct ContentView: View {
                         Image(systemName: "calendar")
                         Text("Agenda")
                     }
-                
+            
                 ContentListView()
                     .tabItem {
                         Image(systemName: "square.3.stack.3d")
                         Text("Conteúdo")
                     }
-                
+            
                 ConnectionsView()
                     .tabItem {
                         Image(systemName: "person.2")
@@ -46,11 +46,11 @@ struct ContentView: View {
                     }
             }
             .accentColor(Color("Secondary1"))
+
         } else {
             SplashView(isActive: false) {
                 isLogged = true
             }
-
         }
     }
 }
