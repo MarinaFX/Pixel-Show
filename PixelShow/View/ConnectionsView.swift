@@ -10,13 +10,13 @@ import SwiftUI
 struct ConnectionsView: View {
     var body: some View {
         NavigationView {
-            ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading) {
+            ScrollView (showsIndicators: false){
+                VStack (alignment: .leading) {
                     Text("Encontre um grupo para se conectar")
                         .fontWeight(.bold)
-                        .foregroundColor(Color("Secondary1"))
                         .padding(.horizontal, 10)
                         .padding(.top)
+                        .foregroundColor(Color("Secondary1"))
                     
                     HStack {
                         CustomSquaredImage(image: "pesquisasDesign", text: "Grupos de pesquisa em Design")
@@ -61,6 +61,8 @@ struct ConnectionsView: View {
             .navigationBarItems(trailing: Image(systemName: "magnifyingglass"))
             .navigationBarTitle("Conexões", displayMode: .inline)
         }
+        .accentColor(.black)
+
     }
 }
 

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ExploreCategories: View {
     var body: some View {
-        
         VStack(alignment: .leading){
             Text("Explore esse universo")
                 .bold()
