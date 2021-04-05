@@ -560,7 +560,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PixelShow/Preview Content\"";
-				DEVELOPMENT_TEAM = 7UW5874D4F;
+				DEVELOPMENT_TEAM = 8G4UL7Z7AB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PixelShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -568,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thaisrfernandes;
+				PRODUCT_BUNDLE_IDENTIFIER = Academmy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,7 +582,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PixelShow/Preview Content\"";
-				DEVELOPMENT_TEAM = 7UW5874D4F;
+				DEVELOPMENT_TEAM = 8G4UL7Z7AB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PixelShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -590,7 +590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thaisrfernandes;
+				PRODUCT_BUNDLE_IDENTIFIER = Academmy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
