@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    var action: (() -> Void)?
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -17,7 +19,7 @@ struct OnboardingView: View {
                     
                     OnboardingScreen(image: Image("OnboardingB"), color: Color("Secondary4"), text: "Prepare-se para um momento único de exploração criativa!")
                     
-                    OnboardingLoginScreen()
+                    OnboardingLoginScreen(action: action)
                     
                 }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .tabViewStyle(PageTabViewStyle())

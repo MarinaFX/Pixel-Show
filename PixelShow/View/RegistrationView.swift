@@ -13,6 +13,7 @@ struct RegistrationView: View {
     @State var company: String = ""
     @State var position: String = ""
 
+    var action: (() -> Void)?
 
     var body: some View {
         ScrollView {
@@ -36,7 +37,7 @@ struct RegistrationView: View {
             }.frame(width: 350, height: nil, alignment: .leading).padding(.bottom, 20)
             
             NavigationLink(
-                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: ""),
+                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: "", action: action),
                 label: {
                     CustomButton(label: "Continuar").padding(.horizontal, 20)
                 })

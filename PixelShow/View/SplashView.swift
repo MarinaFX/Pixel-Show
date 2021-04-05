@@ -10,10 +10,12 @@ import SwiftUI
 struct SplashView: View {
     @State var isActive: Bool = false
     
+    var action: (() -> Void)?
+    
     var body: some View {
         VStack {
             if self.isActive {
-                OnboardingView()
+                OnboardingView(action: action)
             } else {
                 ZStack {
                     Image("fundo1")
