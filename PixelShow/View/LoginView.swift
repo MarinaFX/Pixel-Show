@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    var action: (() -> Void)?
+
     var body: some View {
         VStack {
             VStack {
@@ -27,10 +29,9 @@ struct LoginView: View {
             
             Spacer()
             
-            NavigationLink(destination: ContentView()) {
-                CustomButton(label: "Entrar").padding().padding(.bottom)
-            }
-            
+            CustomButton(label: "Entrar", action: action)
+                .padding()
+                .padding(.bottom)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("Secondary6"))

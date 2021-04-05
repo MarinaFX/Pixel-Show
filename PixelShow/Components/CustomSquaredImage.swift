@@ -35,7 +35,9 @@ struct CustomSquaredImage: View {
                     .multilineTextAlignment(.center)
                 
             }
-        }.padding(EdgeInsets(top: 8, leading: 10, bottom: 8, trailing: 10))
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
     }
 }
 

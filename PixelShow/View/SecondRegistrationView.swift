@@ -12,6 +12,8 @@ struct SecondRegistrationView: View {
     @State var senha: String
     @State var confirmarSenha: String
     
+    var action: (() -> Void)?
+    
     var body: some View {
         VStack{
             
@@ -33,11 +35,10 @@ struct SecondRegistrationView: View {
             }.frame(width: 350, alignment: .leading).padding(.bottom, 20).padding(.horizontal)
             
             
-            NavigationLink(
-                destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: ""),
-                label: {
-                    CustomButton(label: "Cadastrar").padding(.horizontal)
-                })
+            
+            CustomButton(label: "Cadastrar", action: action)
+                .padding(.horizontal)
+            
         }
     }
 }

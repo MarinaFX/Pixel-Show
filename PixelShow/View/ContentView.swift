@@ -8,40 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isLogged = true
     
     var body: some View {
-        TabView() {
-            EventView()
-                .tabItem {
-                    Image(systemName: "puzzlepiece")
-                    Text("Evento")
-                }
+        
+        if isLogged {
             
-            CalendarView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Agenda")
-                }
+            TabView() {
+                EventView()
+                    .tabItem {
+                        Image(systemName: "puzzlepiece")
+                        Text("Evento")
+                    }
+                
+                CalendarView()
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("Agenda")
+                    }
             
-           ContentListView()
-                .tabItem {
-                    Image(systemName: "square.3.stack.3d")
-                    Text("Conteúdo")
-                }
+                ContentListView()
+                    .tabItem {
+                        Image(systemName: "square.3.stack.3d")
+                        Text("Conteúdo")
+                    }
             
-            ConnectionsView()
-                .tabItem {
-                    Image(systemName: "person.2")
-                    Text("Conexões")
-                }
-            
-            FavoritesView()
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Favoritos")
-                }
+                ConnectionsView()
+                    .tabItem {
+                        Image(systemName: "person.2")
+                        Text("Conexões")
+                    }
+                
+                FavoritesView()
+                    .tabItem {
+                        Image(systemName: "heart")
+                        Text("Favoritos")
+                    }
+            }
+            .accentColor(Color("Secondary1"))
+
+        } else {
+            SplashView(isActive: false) {
+                isLogged = true
+            }
         }
-        .accentColor(Color("Secondary1"))
     }
 }
 
