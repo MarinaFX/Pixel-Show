@@ -10,6 +10,7 @@ import SwiftUI
 struct OnboardingView: View {
     var action: (() -> Void)?
     @State private var selected = 0
+    @State private var backgroundColor = Color("Secondary3")
     
     var body: some View {
         NavigationView {
@@ -21,18 +22,24 @@ struct OnboardingView: View {
                     }
                 }
                 .tabViewStyle(PageTabViewStyle())
+                .onChange(of: selected, perform: { value in
+                    withAnimation {
+                        backgroundColor = getColor(selected: selected)
+                    }
+                })
                 
                 LoginButtons(selected: selected, action: action)
                 
                 Spacer()
-                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(getColor(selected: selected))
+            .background(backgroundColor)
             .navigationBarHidden(true)
             .ignoresSafeArea()
+            
         }
         .accentColor(.black)
+        .transition(.move(edge: .top))
     }
 }
 

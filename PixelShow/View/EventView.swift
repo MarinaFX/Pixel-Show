@@ -21,7 +21,6 @@ struct EventView: View {
                 EventNews()
             }
             .navigationTitle("Pixel Show")
-            
         }
     }
 }

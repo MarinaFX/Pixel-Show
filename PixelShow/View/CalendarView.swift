@@ -106,6 +106,7 @@ struct CalendarView: View {
             }
             .navigationBarItems(trailing: Image(systemName: "magnifyingglass"))
             .navigationBarTitle("Agenda", displayMode: .inline)
+            
         }
     }
 }

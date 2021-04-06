@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         if isLogged {
-            TabView() {
+            TabView {
                 EventView(searchText: "")
                     .tabItem {
                         Image(systemName: "puzzlepiece")
@@ -43,6 +43,7 @@ struct ContentView: View {
                         Text("Favoritos")
                     }
             }
+            .transition(.move(edge: .top))
             .accentColor(Color("Secondary1"))
 
         } else {

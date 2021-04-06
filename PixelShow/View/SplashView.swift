@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SplashView: View {
     @State var isActive: Bool = false
+    @State var showLogo: Bool = false
     
     var action: (() -> Void)?
     
@@ -21,17 +22,26 @@ struct SplashView: View {
                     Image("Fundo")
                         .resizable()
                         .ignoresSafeArea()
-                            
-                    Image("Logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 179)
-                        .padding(.horizontal)
+                    
+                    if self.showLogo {
+                        Image("Logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 179)
+                            .padding(.horizontal)
+                            .transition(.opacity)
+                    }
                 }
                 .ignoresSafeArea()
             }
         }
         .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                withAnimation {
+                    self.showLogo = true
+                }
+            }
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 withAnimation {
                     self.isActive = true

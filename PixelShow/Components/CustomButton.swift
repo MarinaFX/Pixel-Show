@@ -32,7 +32,9 @@ struct CustomButton: View {
     var body: some View {
         
         Button(action: {
-            action?()
+            withAnimation {
+                action?()
+            }
         }, label: {
             HStack {
                 icon

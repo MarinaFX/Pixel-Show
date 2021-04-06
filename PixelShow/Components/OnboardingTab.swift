@@ -32,6 +32,7 @@ struct OnboardingTab: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .foregroundColor(.white)
         
+        
     }
 }
 
