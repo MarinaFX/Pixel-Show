@@ -15,25 +15,6 @@ struct CustomButton: View {
     var icon: Image?
     var action: (() -> Void)?
     
-    //    init(label: String) {
-    //        self.label = label
-    //        self.outline = false
-    //        self.color = Color("Secondary3")
-    //    }
-    //
-    //    init(label: String, outline: Bool) {
-    //        self.label = label
-    //        self.outline = outline
-    //        self.color = Color("Secondary3")
-    //    }
-    //
-    //    init(label: String, color: Color, icon: Image) {
-    //        self.label = label
-    //        self.outline = false
-    //        self.color = color
-    //        self.icon = icon
-    //    }
-    
     let transparent: Color = Color(red: 0, green: 0, blue: 0, opacity: 0.0)
     
     var foregroundColor: Color {
@@ -61,12 +42,15 @@ struct CustomButton: View {
         .padding(.vertical, 9)
         .foregroundColor(foregroundColor)
         .frame(maxWidth: .infinity)
-        .border(borderColor, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         .background(backgroundColor)
         .cornerRadius(5.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 5, style: .continuous).stroke(borderColor, lineWidth: 1)
+        )
         
     }
 }
+
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
