@@ -21,9 +21,9 @@
 		1B3CB6FB26150CFF000ACCCB /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB6FA26150CFF000ACCCB /* FlowLayout.swift */; };
 		1B3CB70B26164185000ACCCB /* SecondRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CB70A26164185000ACCCB /* SecondRegistrationView.swift */; };
 		1BA68806261795FC001E77C2 /* CustomSquaredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA68805261795FC001E77C2 /* CustomSquaredImage.swift */; };
-		8924A9982616541F00365727 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8924A9972616541F00365727 /* OnboardingScreen.swift */; };
 		896DDC222613AAB20048337A /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DDC212613AAB20048337A /* EventDetailsView.swift */; };
 		896DDC272613C66F0048337A /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896DDC262613C66F0048337A /* Description.swift */; };
+		89798F02261C0D2F00F8CA37 /* LoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89798F01261C0D2F00F8CA37 /* LoginButtons.swift */; };
 		897E288E261656960020EC34 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E288D261656960020EC34 /* LoginView.swift */; };
 		899B09122612671D00998E33 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B09112612671D00998E33 /* EventView.swift */; };
 		899B0917261267A200998E33 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0916261267A200998E33 /* CalendarView.swift */; };
@@ -32,8 +32,9 @@
 		899B0926261268BE00998E33 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0925261268BE00998E33 /* FavoritesView.swift */; };
 		89A2BAF62614EEF60028CAD4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2BAF52614EEF60028CAD4 /* CustomButton.swift */; };
 		89AE35532615007D0037654E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE35522615007D0037654E /* Video.swift */; };
-		89AE358026161A080037654E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE357F26161A080037654E /* OnboardingView.swift */; };
-		89F63957261647DB00030313 /* OnboardingLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F63956261647DB00030313 /* OnboardingLoginScreen.swift */; };
+		89D2E043261BAA2F000BF73C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2E042261BAA2F000BF73C /* OnboardingView.swift */; };
+		89D2E04B261BACD1000BF73C /* OnboardingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2E04A261BACD1000BF73C /* OnboardingTab.swift */; };
+		89D2E059261BB9DE000BF73C /* OnboardingPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2E058261BB9DE000BF73C /* OnboardingPages.swift */; };
 		9F5F36CB2613A9B500D7B20B /* ExploreCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */; };
 		9F5F36D02613A9FF00D7B20B /* EventNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36CF2613A9FF00D7B20B /* EventNews.swift */; };
 		9F5F36DA2614FA9700D7B20B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5F36D92614FA9700D7B20B /* SplashView.swift */; };
@@ -84,9 +85,9 @@
 		1B3CB6FA26150CFF000ACCCB /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		1B3CB70A26164185000ACCCB /* SecondRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRegistrationView.swift; sourceTree = "<group>"; };
 		1BA68805261795FC001E77C2 /* CustomSquaredImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSquaredImage.swift; sourceTree = "<group>"; };
-		8924A9972616541F00365727 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		896DDC212613AAB20048337A /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		896DDC262613C66F0048337A /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		89798F01261C0D2F00F8CA37 /* LoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtons.swift; sourceTree = "<group>"; };
 		897E288D261656960020EC34 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		899B09112612671D00998E33 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		899B0916261267A200998E33 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -95,8 +96,9 @@
 		899B0925261268BE00998E33 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		89A2BAF52614EEF60028CAD4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		89AE35522615007D0037654E /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		89AE357F26161A080037654E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		89F63956261647DB00030313 /* OnboardingLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLoginScreen.swift; sourceTree = "<group>"; };
+		89D2E042261BAA2F000BF73C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		89D2E04A261BACD1000BF73C /* OnboardingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTab.swift; sourceTree = "<group>"; };
+		89D2E058261BB9DE000BF73C /* OnboardingPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPages.swift; sourceTree = "<group>"; };
 		9F5F36CA2613A9B500D7B20B /* ExploreCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCategories.swift; sourceTree = "<group>"; };
 		9F5F36CF2613A9FF00D7B20B /* EventNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNews.swift; sourceTree = "<group>"; };
 		9F5F36D92614FA9700D7B20B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -190,8 +192,8 @@
 				1B3CB6942613E8A2000ACCCB /* RegistrationView.swift */,
 				1B3CB70A26164185000ACCCB /* SecondRegistrationView.swift */,
 				896DDC212613AAB20048337A /* EventDetailsView.swift */,
-				89AE357F26161A080037654E /* OnboardingView.swift */,
 				897E288D261656960020EC34 /* LoginView.swift */,
+				89D2E042261BAA2F000BF73C /* OnboardingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,9 +214,9 @@
 				89A2BAF52614EEF60028CAD4 /* CustomButton.swift */,
 				1B3CB6FA26150CFF000ACCCB /* FlowLayout.swift */,
 				89AE35522615007D0037654E /* Video.swift */,
-				89F63956261647DB00030313 /* OnboardingLoginScreen.swift */,
-				8924A9972616541F00365727 /* OnboardingScreen.swift */,
 				1BA68805261795FC001E77C2 /* CustomSquaredImage.swift */,
+				89D2E04A261BACD1000BF73C /* OnboardingTab.swift */,
+				89798F01261C0D2F00F8CA37 /* LoginButtons.swift */,
 				9F5F370A261BA04600D7B20B /* SearchBar.swift */,
 				9F8D0239261BCE4500C7F119 /* ContentCard.swift */,
 			);
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				C0FE7FEF26139E54000BC492 /* EventsList.swift */,
+				89D2E058261BB9DE000BF73C /* OnboardingPages.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -384,6 +387,8 @@
 				9F8D023A261BCE4500C7F119 /* ContentCard.swift in Sources */,
 				1BA68806261795FC001E77C2 /* CustomSquaredImage.swift in Sources */,
 				C0FE7FF026139E54000BC492 /* EventsList.swift in Sources */,
+				89798F02261C0D2F00F8CA37 /* LoginButtons.swift in Sources */,
+				89D2E043261BAA2F000BF73C /* OnboardingView.swift in Sources */,
 				1B3CB6952613E8A2000ACCCB /* RegistrationView.swift in Sources */,
 				1B3CB69F2613F3DD000ACCCB /* ImagePicker.swift in Sources */,
 				1B3CB6782613A519000ACCCB /* CustomTextField.swift in Sources */,
@@ -395,17 +400,16 @@
 				1B3CB6852613CAD9000ACCCB /* SingleInterest.swift in Sources */,
 				9F5F36D02613A9FF00D7B20B /* EventNews.swift in Sources */,
 				1B3CB6702613A50A000ACCCB /* InterestMatrix.swift in Sources */,
+				89D2E059261BB9DE000BF73C /* OnboardingPages.swift in Sources */,
 				C0FE7FAF26137CE0000BC492 /* Event.swift in Sources */,
 				899B0917261267A200998E33 /* CalendarView.swift in Sources */,
 				1B3CB6FB26150CFF000ACCCB /* FlowLayout.swift in Sources */,
+				89D2E04B261BACD1000BF73C /* OnboardingTab.swift in Sources */,
 				C0FE7FC226137FB0000BC492 /* Content.swift in Sources */,
-				89F63957261647DB00030313 /* OnboardingLoginScreen.swift in Sources */,
 				C0FE7FBA26137E59000BC492 /* Interest.swift in Sources */,
 				1B3CB70B26164185000ACCCB /* SecondRegistrationView.swift in Sources */,
 				C0FE80062613C2BD000BC492 /* Events.swift in Sources */,
 				896DDC222613AAB20048337A /* EventDetailsView.swift in Sources */,
-				8924A9982616541F00365727 /* OnboardingScreen.swift in Sources */,
-				89AE358026161A080037654E /* OnboardingView.swift in Sources */,
 				89AE35532615007D0037654E /* Video.swift in Sources */,
 				899B091C2612680600998E33 /* ContentListView.swift in Sources */,
 			);
@@ -564,7 +568,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PixelShow/Preview Content\"";
-				DEVELOPMENT_TEAM = 8G4UL7Z7AB;
+				DEVELOPMENT_TEAM = 7UW5874D4F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PixelShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -572,7 +576,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Academmy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thaisrfernandes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,7 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PixelShow/Preview Content\"";
-				DEVELOPMENT_TEAM = 8G4UL7Z7AB;
+				DEVELOPMENT_TEAM = 7UW5874D4F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PixelShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -594,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Academmy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thaisrfernandes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

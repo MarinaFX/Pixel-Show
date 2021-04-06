@@ -40,7 +40,7 @@ struct RegistrationView: View {
             NavigationLink(
                 destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: "", action: action),
                 label: {
-                    CustomButton(label: "Continuar", action: action).padding(.horizontal, 20)
+                    CustomButton(label: "Continuar").padding(.horizontal, 20)
                 })
             
             Spacer()

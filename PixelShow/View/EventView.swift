@@ -14,7 +14,8 @@ struct EventView: View {
         NavigationView {
             ScrollView(showsIndicators: false) {
                 SearchBar(text: $searchText)
-                    .padding(.top, 1)
+                    .padding(.vertical, 5)
+                    
                 Image("Banner").resizable().scaledToFit()
                 ExploreCategories()
                 EventNews()
