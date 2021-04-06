@@ -15,7 +15,6 @@ struct SecondRegistrationView: View {
     var action: (() -> Void)?
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
             VStack{
                 CustomTextField(text: "E-mail", placeholder: "exemplo123@email.com", input: email)
                 CustomTextField(text: "Senha", placeholder: "********", input: senha)
@@ -34,7 +33,6 @@ struct SecondRegistrationView: View {
                     .padding(.horizontal)
             }
             .padding(.top, 20)
-        }
         .navigationBarTitle("Cadastro", displayMode: .inline)
     }
 }

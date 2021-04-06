@@ -35,7 +35,7 @@ struct EventDetailsView: View {
                             .fontWeight(.bold)
                         
                         HStack {
-                            Link(destination: URL(string: "https://www.apple.com")!) {
+                            Link(destination: URL(string: "https://www.behance.net")!) {
                                 Image("behance").resizable().frame(width: 45, height: 45).padding(.trailing, 3)
                             }
                             
@@ -78,7 +78,7 @@ struct EventDetailsView: View {
                     CustomButton(label: "Inscrever-se")
                 }
             }.padding(.horizontal, 22)
-        }
+        }.accentColor(.black)
     }
 }
 
@@ -89,14 +89,3 @@ struct EventDetailsView_Previews: PreviewProvider {
     }
 }
 
-//extension UINavigationController {
-//    override open func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//        let standard = UINavigationBarAppearance()
-//        standard.backgroundColor = .white
-//        
-//        //navigationBar.standardAppearance = standard
-//        
-//    }
-//}

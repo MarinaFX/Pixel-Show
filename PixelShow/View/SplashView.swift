@@ -18,7 +18,7 @@ struct SplashView: View {
                 OnboardingView(action: action)
             } else {
                 ZStack {
-                    Image("fundo1")
+                    Image("Fundo")
                         .resizable()
                         .ignoresSafeArea()
                             
