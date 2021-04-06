@@ -40,15 +40,3 @@ struct InterestMatrix_Previews: PreviewProvider {
         InterestMatrix()
     }
 }
-
-
-//    ScrollView(.horizontal) {
-//        ForEach(0..<2) { _ in
-//            HStack {
-//                ForEach(interests, id:\.self) { aux in
-//                    SingleInterest(interest: aux)
-//                }
-//            }
-//        }
-//    }
-//}.padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 0))

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     var action: (() -> Void)?
+    @Environment(\.colorScheme) var colorScheme
     @State private var selected = 0
     @State private var backgroundColor = Color("Secondary3")
     
@@ -38,7 +39,7 @@ struct OnboardingView: View {
             .ignoresSafeArea()
             
         }
-        .accentColor(.black)
+        .accentColor(colorScheme == .dark ? .white : .black)
         .transition(.move(edge: .top))
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CustomTextField: View {
+    @Environment(\.colorScheme) var colorScheme
+
     var text: String
     var placeholder: String
     @State var input: String = ""
@@ -19,6 +21,7 @@ struct CustomTextField: View {
                 .fontWeight(.semibold)
             
             TextField(placeholder, text: $input)
+                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                 .underlineTextFieldStyle()
             
         }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))

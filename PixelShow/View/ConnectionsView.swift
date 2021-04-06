@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ConnectionsView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         NavigationView {
             ScrollView (showsIndicators: false){
@@ -61,7 +63,7 @@ struct ConnectionsView: View {
             .navigationBarItems(trailing: Image(systemName: "magnifyingglass"))
             .navigationBarTitle("Conexões", displayMode: .inline)
         }
-        .accentColor(.black)
+        .accentColor(colorScheme == .dark ? .white : .black)
 
     }
 }
