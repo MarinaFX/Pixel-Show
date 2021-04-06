@@ -14,7 +14,10 @@ struct OnboardingTab: View {
         VStack {
             Spacer()
             
-            Image(page.image).resizable().scaledToFit().padding(.bottom)
+            Image(page.image)
+                .resizable()
+                .scaledToFit()
+                .padding(.bottom)
             
             Spacer()
 

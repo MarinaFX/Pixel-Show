@@ -9,13 +9,22 @@ import SwiftUI
 
 struct LoginButtons: View {
     var selected = 0
+    var action: (() -> Void)?
+    
     
     var body: some View {
         VStack {
             if selected == 2 {
-                CustomButton(label: "Entrar", outline: true)
-                CustomButton(label: "Quero me cadastrar")
+                NavigationLink(destination: LoginView(action: action)) {
+                    CustomButton(label: "Entrar", outline: true)
+                }
+                
+                NavigationLink(destination: RegistrationView(action: action)) {
+                    CustomButton(label: "Quero me cadastrar")
+                }
+                
                 CustomButton(label: "Entrar com Apple ID", color: Color.black, icon: Image(systemName: "applelogo"))
+                
             }
         }
         .frame(height: 130)

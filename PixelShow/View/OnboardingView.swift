@@ -12,24 +12,26 @@ struct OnboardingView: View {
     @State private var selected = 0
     
     var body: some View {
-        VStack {
-            TabView(selection: $selected) {
-                
-                ForEach(onboardingPages.indices, id: \.self) { index in
-                    OnboardingTab(page: onboardingPages[index])
+        NavigationView {
+            VStack {
+                TabView(selection: $selected) {
+                    
+                    ForEach(onboardingPages.indices, id: \.self) { index in
+                        OnboardingTab(page: onboardingPages[index])
+                    }
                 }
+                .tabViewStyle(PageTabViewStyle())
+                
+                LoginButtons(selected: selected, action: action)
+                
+                Spacer()
+                
             }
-            .tabViewStyle(PageTabViewStyle())
-            
-            LoginButtons(selected: selected)
-            
-            Spacer()
-            
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(getColor(selected: selected))
+            .navigationBarHidden(true)
+            .ignoresSafeArea()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(getColor(selected: selected))
-        .navigationBarHidden(true)
-        .ignoresSafeArea()
     }
 }
 
