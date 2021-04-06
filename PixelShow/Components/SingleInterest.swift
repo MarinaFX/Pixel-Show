@@ -10,7 +10,8 @@ import SwiftUI
 struct SingleInterest: View {
     @State var tappedItems: Set<String> = ["ilustração", "artes visuais"]
     @State var interest: String
-
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         FlowLayout(mode: .scrollable,
                        items: ["ilustração"
@@ -39,7 +40,7 @@ struct SingleInterest: View {
                     }
                 })
                 .padding(.all, 6)
-                .foregroundColor(tappedItems.contains(category) ? Color.white : Color.black)
+                .foregroundColor(tappedItems.contains(category) ? Color.white : (colorScheme == .dark ? Color.white : Color.black))
                 .background(ZStack{
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
                         .foregroundColor(tappedItems.contains(category) ? Color("Secondary5") : Color.clear)
@@ -56,17 +57,3 @@ struct SingleInterest_Previews: PreviewProvider {
         SingleInterest(interest: "Design Gráfico")
     }
 }
-
-
-//ZStack {
-//    RoundedRectangle(cornerRadius: 8, style: .continuous)
-//        .foregroundColor(didTap ? Color.green : Color.clear)
-//    
-//    RoundedRectangle(cornerRadius: 8, style: .continuous)
-//        .stroke(Color.black, lineWidth: 1)
-//        
-//    Text(interest)
-//        .padding(.all, 6)
-//        .font(.system(size: 12))
-//        .onTapGesture (count: 1, perform: { didTap.toggle() })
-//}.fixedSize().padding(.horizontal, 2)
