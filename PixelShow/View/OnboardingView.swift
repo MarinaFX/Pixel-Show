@@ -32,6 +32,7 @@ struct OnboardingView: View {
             .navigationBarHidden(true)
             .ignoresSafeArea()
         }
+        .accentColor(.black)
     }
 }
 

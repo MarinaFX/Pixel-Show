@@ -8,27 +8,25 @@
 import SwiftUI
 
 struct EventView: View {
+    @State var searchText: String
+    
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
+                SearchBar(text: $searchText)
+                    .padding(.top, 1)
                 Image("Banner").resizable().scaledToFit()
                 ExploreCategories()
                 EventNews()
             }
-            
             .navigationTitle("Pixel Show")
-            .toolbar {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "magnifyingglass")
-                })
-            }
+            
         }
-        .accentColor(.black)
     }
 }
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView()
+        EventView(searchText: "")
     }
 }

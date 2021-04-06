@@ -12,12 +12,13 @@ struct RegistrationView: View {
     @State var lastName: String = ""
     @State var company: String = ""
     @State var position: String = ""
-
+    
     var action: (() -> Void)?
-
+    
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             UserPicture()
+                .padding(.top, 10)
             
             VStack {
                 CustomTextField(text: "Primeiro Nome", placeholder: "John", input: name)
@@ -29,7 +30,7 @@ struct RegistrationView: View {
             InterestMatrix()
             
             Spacer()
-                        
+            
             VStack {
                 Text("Ao clicar em ").font(.system(size: 12)) +
                     Text("Cadastrar ").bold().font(.system(size: 12)) +
@@ -39,11 +40,12 @@ struct RegistrationView: View {
             NavigationLink(
                 destination: SecondRegistrationView(email: "", senha: "", confirmarSenha: "", action: action),
                 label: {
-                    CustomButton(label: "Continuar").padding(.horizontal, 20)
+                    CustomButton(label: "Continuar", action: action).padding(.horizontal, 20)
                 })
             
             Spacer()
         }
+        .navigationBarTitle("Cadastro", displayMode: .inline)        
     }
 }
 
